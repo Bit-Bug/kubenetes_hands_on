@@ -17,5 +17,13 @@ then
 	kubectl describe pod.spec
 	kubectl get po kubia-manual -o yaml
 	kubectl get po kubia-manual -o json
+	kubectl create -f kubia_with_labels.yaml
+	kubectl get po --show-labels
+	kubectl get po -L creation_method,env
+	kubectl label po kubia-manual creation_method=manual
+	kubectl label po kubia-manual-v2 env=debug --overwrite
+	kubectl get po -L creation_method,env
+	kubectl get po -l creation_method=manual
+	kubectl get po -l '!env'
     fi
 fi
