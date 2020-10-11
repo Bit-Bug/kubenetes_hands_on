@@ -5,4 +5,6 @@ Through google cloud (KGE)
 
 
 To run and start your cloud cluster type : 
-> sh launch.sh
+```sh
+   sh launch.sh
+```
