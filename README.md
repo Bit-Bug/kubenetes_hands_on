@@ -6,9 +6,9 @@ Through google cloud (KGE)
 
 #Pre-requisites
 
-> gcloud account available
-> Kubernetes Api enabled
-> gcloud cli installed
+- gcloud account available
+- Kubernetes Api enabled
+- gcloud cli installed
 
 To run and start your cloud cluster type : 
 ```sh
