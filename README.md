@@ -4,7 +4,13 @@ This project describes the different steps for running and managing kubernetes
 Through google cloud (KGE)
 
 
+#Pre-requisites
+
+> gcloud account available
+> Kubernetes Api enabled
+> gcloud cli installed
+
 To run and start your cloud cluster type : 
 ```sh
-   sh launch.sh
+   sh launcher.sh
 ```
