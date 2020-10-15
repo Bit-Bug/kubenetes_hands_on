@@ -29,7 +29,9 @@ then
 		 #get cluster namespaces
 		kubectl get ns
 		kubectl get po --namespace kube-system
-		kubectl create -f kubia-manual.yaml -n custom-namespace
+ 		kubectl create -f custom-namespace.yaml
+ 		kubectl create -f mypod.yaml -n custom-namespace
+		kubectl create -f kubia-liveness-probe.yaml -n custom-namespace
 
     fi
 fi
